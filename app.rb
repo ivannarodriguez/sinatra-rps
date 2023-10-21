@@ -3,7 +3,9 @@ require "sinatra/reloader"
 
 actions = ["rock", "paper", "scissors"]
 
-def rock_paper_scissors(ours, theirs) # i'd written ifelse statements, learned about case thru chatgpt
+def rock_paper_scissors(ours, theirs)
+  # id written if statements, but learned about case thanks to ChatGPT so used that instead here 
+  # bc it looks much cleaner:
   result = case [ours, theirs]
            when ["rock", "scissors"], ["paper", "rock"], ["scissors", "paper"]
              "We won!"
